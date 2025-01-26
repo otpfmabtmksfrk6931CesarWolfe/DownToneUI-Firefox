@@ -12,5 +12,7 @@
   max-width: var(--ui-sidebar-collapsed-width) !important;
   z-index: 3 !important;
 }
-#sidebar-box:hover #sidebar { min-width: var(--ui-sidebar-extended-width) !important; }
+#sidebar-box:hover, #sidebar-box[sidebarcommand="viewBookmarksSidebar"], #sidebar-box[sidebarcommand="viewHistorySidebar"] {
+  #sidebar { min-width: var(--ui-sidebar-extended-width) !important; }
+}
 #sidebar { transition: min-width var(--ui-sidebar-animation-speed) ease-out var(--ui-sidebar-hover-debounce); }
