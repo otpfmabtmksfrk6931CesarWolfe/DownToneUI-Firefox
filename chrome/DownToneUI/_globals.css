@@ -33,7 +33,7 @@
   --theme-shadow: 0px 0px var(--theme-shadow-margin) hsla(0, 0%, 0%, 0.4);
 
   --ui-sidebar-collapsed-width: 34px;
-  --ui-sidebar-extended-width: 300px;
+  --ui-sidebar-extended-width: 270px;
   --ui-bookmarks-hover-debounce: 200ms;
   --ui-bookmarks-animation-speed: 200ms;
 
