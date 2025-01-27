@@ -142,7 +142,7 @@ search-textbox#search-box, button#viewButton {
 search-textbox#search-box:focus {
   outline: var(--theme-border-width) solid rgba(var(--theme-accent-color), var(--theme-accent-low-alpha)) !important;
 }
-#urlbar-input {
+#navigator-toolbox, #urlbar-input {
   border: none !important;
   border-radius: 0px !important;
 }

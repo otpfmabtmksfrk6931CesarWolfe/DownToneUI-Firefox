@@ -5,6 +5,9 @@
 #TabsToolbar { visibility: collapse !important; }
 #nav-bar .titlebar-buttonbox-container { display: flex !important; }
 
+/* Align History items favicons with the tabs */
+#historyTree { margin-left: -15px !important; }
+
 #sidebar-header, #sidebar-splitter { display: none !important; }
 
 #sidebar-box {
