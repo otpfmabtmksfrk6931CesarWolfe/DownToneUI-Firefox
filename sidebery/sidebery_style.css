@@ -70,18 +70,24 @@
 }
 
 #root:not(:hover) .Tab[data-lvl]:not([data-lvl="0"]) { --tabs-indent: 0px; }
-#root:not(:hover) { .Tab .title, .Tab[data-active="true"] .audio { opacity: 0; }}
+#root:not(:hover) .Tab .title { opacity: 0; }
 #root { .Tab .title, .Tab .audio { transition: opacity var(--ui-sidebar-animation-speed) linear var(--ui-sidebar-hover-debounce); }}
 
-.Tab:not(:hover):not([data-active="true"]) .body:has(.audio) {
+.body .audio-icon { fill: rgb(var(--theme-text-color)); }
+.body:has(.audio) {
   .fav { display: none; }
+  .title { margin-left: 10px; }
   .audio {
     background-color: rgb(var(--theme-accent-color));
-    border-radius: var(--theme-border-radius);
-    margin-left: -17px;
+    height: 17px;
+    width: 17px;
+    margin: 5.5px 0px 0px -14.5px;
+    border-radius: 9999px;
   }
-  .title { margin-left: 12px; }
 }
-.body .audio-icon { fill: rgb(var(--theme-text-color)); }
 
 .Tab .body { padding-left: 2px; }
+
+/* Disable tab folding */
+.exp { display: none; }
+.Tab[data-parent][data-folded] .fav > img { opacity: 1; }
