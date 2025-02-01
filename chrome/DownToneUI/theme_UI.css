@@ -112,7 +112,7 @@
   --input-color: rgb(var(--theme-text-color)) !important;
   --in-content-border-color: var(--theme-border-color) !important;
   --chrome-content-separator-color: rgb(var(--theme-main-color)) !important;
-  --download-progress-fill-color: rgb(var(--theme-accent-color)) !important;
+  --download-progress-fill-color: var(--theme-accent-high-contrast) !important;
 }
 
 /* Shadows */
@@ -184,6 +184,6 @@ button#viewButton[open], #notification-popup-box[open] {
   background-color: rgb(var(--theme-accent-color)) !important;
 }
 #stop-button:not([disabled]) { fill: var(--theme-accent-high-contrast) !important; }
-#statuspanel-label, tooltip { color: var(--theme-accent-high-contrast) !important; }
+tooltip, #statuspanel-label, #downloads-button { color: var(--theme-accent-high-contrast) !important; }
 search-textbox#search-box, button#viewButton, tooltip { appearance: none !important; }
 #statuspanel { margin: 10px !important; }
