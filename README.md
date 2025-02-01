@@ -5,27 +5,27 @@
 
 ## Install
 
-1. Set Firefox theme to Dark: `Settings > Extensions & Themes > Themes > Dark`.
-2. Vertical tabs:
+1. Set Firefox theme to `Dark` in: Firefox settings > Extensions & Themes > Themes.
+2. Vertical tabs *(Optional, see [Customization](https://github.com/oviung/DownToneUI-Firefox/edit/main/README.md#customization))*:
     * Install the [Sidebery extension](https://addons.mozilla.org/en-US/firefox/addon/sidebery/).
-    * `Sidebery settings > Help > Import addon data > Choose file "Sidebery/settings.json"`.
-    * *(Optional)* For tab previews: `Sidebery settings > Search for "Tabs preview" > Enable and grant permissions`.
+    * Go to Sidebery settings (right-click extension) > Help > Import addon data > Choose file `sidebery/settings.json`.
+    * *(Optional)* For tab previews: Sidebery settings > Search for "Tabs preview" > Enable and grant permissions.
 3. Go to `about:config` (in the URL bar) and set `toolkit.legacyUserProfileCustomizations.stylesheets = true`.
-4. Go to `about:support` > `Search for "Profile Directory" > Open > Copy the "chrome" folder to this location`.
+4. Go to `about:support` > Search for "Profile Directory" > Open > Copy the "chrome" folder to this location.
 5. Restart Firefox.
 
 ## Uninstall
 
 Set `toolkit.legacyUserProfileCustomizations.stylesheets = false` or delete the `chrome` folder from the profile.\
-For Sidebery: `Help > Reset settings`.
+For Sidebery: Sidebery settings > Help > Reset settings.
 
 ## Customization
 
 * For normal (horizontal) tabs:
-    * Remove the line containing `sidebar.css` from file `chrome/userChrome.css`.
+    * In file `chrome/userChrome.css` remove the line `@import "DownToneUI/sidebar.css";`.
 * Changing the color scheme:
     * This can be done in `chrome/DownToneUI/_globals.css` by modifying the `--theme` variables.
-    * **NOTE** that if vertical tabs are used, these changes have to also be copied to: Sidebery settings > Style editor.
+    * **NOTE** that if vertical tabs are used, these changes have to also be done in: Sidebery settings > Style editor.
 
 ## Notes
 
