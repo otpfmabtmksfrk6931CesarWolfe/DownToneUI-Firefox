@@ -6,6 +6,12 @@
 #toolbar-menubar, #TabsToolbar, #nav-bar { z-index: 2 !important; } /* Container member */
 #PersonalToolbar { z-index: 1 !important; } /* Bookmarks bar below the other members */
 
+/* Smaller bookmarks overflow button in compact mode */
+:root[uidensity="compact"] #PlacesChevron {
+  margin-block: 0px !important;
+  height: 22px !important;
+}
+
 /* Shadow for the Bookmarks bar */
 #PersonalToolbar { box-shadow: var(--theme-shadow) !important; }
 
