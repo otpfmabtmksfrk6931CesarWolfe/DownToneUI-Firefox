@@ -148,15 +148,17 @@ search-textbox#search-box:focus {
 }
 
 /* Tab events */
-.tabbrowser-tab .tab-icon-overlay {
-  background-color: rgb(var(--theme-accent-color)) !important;
-  fill: rgb(var(--theme-text-color)) !important;
-}
 .tabbrowser-tab:not([selected]) .tab-content {
   color: rgba(var(--theme-text-color), var(--theme-text-mid-alpha)) !important;
 }
 .tab-background[selected] {
   border: var(--theme-border-width) solid rgb(var(--theme-accent-color)) !important;
+}
+.tabbrowser-tab[soundplaying] .tab-icon-image { opacity: 0 !important; }
+.tab-icon-overlay {
+  background-color: rgb(var(--theme-accent-color)) !important;
+  fill: rgb(var(--theme-text-color)) !important;
+  opacity: 1 !important;
 }
 
 /* Specific elements styling */
