@@ -255,10 +255,8 @@
       "reload",
       "duplicate",
       "pin",
-      "copyTabsTitles",
       "bookmark",
       "separator-3",
-      "group",
       "flatten",
       "separator-4",
       "clearCookies",
@@ -268,6 +266,9 @@
       "selectAllTabs",
       "closeTabsDuplicates",
       "separator-8",
+      "reloadTabs",
+      "discardTabs",
+      "separator-6418986148404041",
       "openPanelConfig"
     ],
     "bookmarks": [
