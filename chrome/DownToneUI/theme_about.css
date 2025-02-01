@@ -101,15 +101,16 @@ url-prefix("about:welcome"),   url-prefix("chrome:") {{}
   }
 
   /* Shadows */
-  panel-list, #sidebar, .sidebar, .navigation, .customize-menu, .wallpaper-list, .topsite-form {
+  panel-list, div#categories, login-list.initialized, #sidebar, .sidebar, .navigation, .customize-menu,
+  .wallpaper-list, .topsite-form {
     box-shadow: var(--theme-shadow) !important;
   }
   #sidebar, .navigation { z-index: 99 !important; }
   button.cancel, button.done { box-shadow: none !important; }
 
   /* Borders */
-  input, .close-button, .dialogTitleBar, .search-inner-wrapper *, .fieldpair, .connect-section__extra,
-  .debug-target-item__additional_actions, button.done {
+  body[dir="ltr"], input, login-list.initialized, .close-button, .dialogTitleBar, .search-inner-wrapper *,
+  .fieldpair, .connect-section__extra, .debug-target-item__additional_actions, button.done {
     border-color: var(--theme-border-color) !important;
   }
   .default-input:focus, input[type="text"]:focus {  
@@ -122,28 +123,44 @@ url-prefix("about:welcome"),   url-prefix("chrome:") {{}
   .tab-button[selected] { border-top-color: rgb(var(--theme-accent-color)) !important; }
 
   /* Specific elements styling */
-  .app, .customize-menu, .close-button-wrapper, #migrationWizardDialog, .topsite-form {
+  body[dir="ltr"], login-list.initialized, .category-subsection, .meta.text-deemphasized, .app, .customize-menu,
+  .close-button-wrapper, #migrationWizardDialog, .topsite-form {
     background-color: rgb(var(--theme-main-color)) !important;
   }
   .default-input, .card, .privacy-detailedoption, .qr-code-box, .search-inner-wrapper *,
-  #moz-toggle-button[aria-pressed="false"] {
+  .list-item.selected, #moz-toggle-button[aria-pressed="false"] {
     background-color: rgb(var(--theme-secondary-color)) !important;
   }
-  richlistitem, button.category, .tab-button, .primary-button, .qa-sidebar-item, .search-inner-wrapper * {
+  .category, button.category, button[role="tab"], .tab-button, .primary-button,
+  .qa-sidebar-item, .search-inner-wrapper * {
     color: rgb(var(--theme-text-color)) !important;
   }
   .primary-button, .close-button, .selector, button.cancel, button.done {
     background-color: rgba(var(--theme-accent-color), var(--theme-accent-low-alpha)) !important;
   }
-  richlistitem:hover, .default-button:hover, .primary-button:hover, .close-button:hover, button.cancel:hover,
-  button.done:hover, .qa-sidebar-item:hover:not(.qa-sidebar-item-selected):has(.sidebar-item__link)  {
+  .default-button:hover, .primary-button:hover, .close-button:hover, button.cancel:hover, button.done:hover  {
     background-color: rgba(var(--theme-accent-color), var(--theme-accent-mid-alpha)) !important;
   }
-  richlistitem[selected], button.category[selected], .default-button:active, .primary-button:active,
-  .qa-sidebar-item-selected, .close-button:active, button.cancel:active, button.done:active {
+  .default-button:active, .primary-button:active, .close-button:active, button.cancel:active, button.done:active {
     background-color: rgb(var(--theme-accent-color)) !important;
   }
-  .enable-custom-image-input { color: var(--theme-accent-high-contrast) !important; }
+  body[dir="ltr"] a, .enable-custom-image-input {
+    color: var(--theme-accent-high-contrast) !important;
+  }
+
+  /* Sidebars */
+  .category:hover, button[role="tab"]:hover, .category-subsection:hover,
+  .qa-sidebar-item:hover:not(.qa-sidebar-item-selected):has(.sidebar-item__link) {
+    background-color: rgb(var(--theme-main-color)) !important;
+    border-left: 5px solid rgba(var(--theme-accent-color), var(--theme-accent-low-alpha)) !important;
+  }
+  .category[selected], .category.selected, .category-subsection.selected, .qa-sidebar-item-selected,
+  button.category[selected], button[role="tab"][selected] {
+    background-color: rgb(var(--theme-secondary-color)) !important;
+    border-left: 5px solid rgb(var(--theme-accent-color)) !important;
+  }
+  div#categories { margin: 0 !important; }
+
   .weatherCard:not(:hover) .weatherButtonContextMenuWrapper { opacity: 0 !important; }
   .logo-and-wordmark { display: none !important; }
 
