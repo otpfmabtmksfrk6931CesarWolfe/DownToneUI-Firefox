@@ -65,6 +65,8 @@
   --toolbar-el-overlay-active-border: rgb(var(--theme-accent-color));
   --toolbar-el-overlay-selected-bg: rgb(var(--theme-secondary-color));
   --toolbar-el-overlay-selected-border: rgb(var(--theme-accent-color));
+
+  --ctx-menu-min-width: 170px;
 }
 
 #root:not(:hover) .Tab[data-lvl]:not([data-lvl="0"]) { --tabs-indent: 0px; }
