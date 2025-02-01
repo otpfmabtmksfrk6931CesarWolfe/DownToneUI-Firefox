@@ -6,7 +6,7 @@
 ## Install
 
 1. Set Firefox theme to `Dark` in: Firefox settings > Extensions & Themes > Themes.
-2. Vertical tabs *(Optional, see [Customization](https://github.com/oviung/DownToneUI-Firefox/edit/main/README.md#customization))*:
+2. Vertical tabs *(Optional, see [Customization](https://github.com/oviung/DownToneUI-Firefox#Customization))*:
     * Install the [Sidebery extension](https://addons.mozilla.org/en-US/firefox/addon/sidebery/).
     * Go to Sidebery settings (right-click extension) > Help > Import addon data > Choose file `sidebery/settings.json`.
     * *(Optional)* For tab previews: Sidebery settings > Search for "Tabs preview" > Enable and grant permissions.
