@@ -26,6 +26,7 @@ For Sidebery: Sidebery settings > Help > Reset settings.
 * Changing the color scheme:
     * This can be done in `chrome/DownToneUI/_globals.css` by modifying the `--theme` variables.
     * **NOTE** that if vertical tabs are used, these changes have to also be done in: Sidebery settings > Style editor.
+* It's recommended that additional changes or updates of the default styles to be done in files `DownToneUI/override_chrome.css` or `DownToneUI/override_content.css` (which should be created by you). This way, your local changes will not be lost when this repository is updated.
 
 ## Notes
 
