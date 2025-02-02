@@ -2,9 +2,6 @@
  * Navigation bar tweaks
  * ========================================================================= */
 
-/* Remove margin around URLbar */
-* { --urlbar-container-height: var(--urlbar-min-height) !important; }
-
 /* Hide "Bookmark this page" button from URLbar */
 #star-button-box { display: none !important; }
 

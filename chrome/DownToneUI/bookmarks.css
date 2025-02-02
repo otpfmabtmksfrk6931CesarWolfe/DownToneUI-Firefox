@@ -9,7 +9,7 @@
 /* Smaller bookmarks overflow button in compact mode */
 :root[uidensity="compact"] #PlacesChevron {
   margin-block: 0px !important;
-  height: 22px !important;
+  height: var(--ui-bookmarks-inner-height) !important;
 }
 
 /* Shadow for the Bookmarks bar */
