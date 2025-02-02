@@ -16,3 +16,10 @@ tooltip, #statuspanel-label { padding: 2px !important; }
 /* Findbar */
 findbar { padding: 0px !important; }
 .findbar-closebutton { margin: 0px !important; }
+
+/* Window controls */
+@media (-moz-platform: windows) {
+  .titlebar-button { padding: 10px !important; }
+  :root[uidensity="compact"] .titlebar-button { padding: 8px !important; }
+  :root[uidensity="touch"] .titlebar-button { padding: 11px !important; }
+}
