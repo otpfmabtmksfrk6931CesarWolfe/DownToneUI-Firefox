@@ -24,15 +24,15 @@ For Sidebery: Sidebery settings > Help > Reset settings.
 * For normal (horizontal) tabs:
     * In file `chrome/userChrome.css` remove the line `@import "DownToneUI/sidebar.css";`.
 * Changing the color scheme:
-    * This can be done in `chrome/DownToneUI/_globals.css` by modifying the `--theme` variables.
+    * This can be done in `chrome/DownToneUI/_globals.css` by modifying the `--dtui-theme` variables.
     * **NOTE** that if vertical tabs are used, these changes have to also be done in: Sidebery settings > Style editor.
-* It's recommended that additional changes or updates of the default styles to be done in files `DownToneUI/override_chrome.css` or `DownToneUI/override_content.css` (which should be created by you). This way, your local changes will not be lost when this repository is updated.
+* It's recommended that additional changes or updates of the default styles to be done in files `DownToneUI/override_chrome.css` or `DownToneUI/override_content.css` (which should be created by you). This way, your local changes will persist when this repository is updated.
 
 ## Notes
 
 * The bookmarks bar inner height varies based on the font you use and maybe other factors. To get the correct height, some trial & error might be needed.
     * First, in `bookmarks.css`, uncomment the line containing `background-color: red` and comment the one below it (`opacity: 0`).
-    * Modify the value of `--ui-bookmarks-inner-height` in `chrome/DownToneUI/_globals.css`. (Firefox restart is needed after every change)
+    * Modify the value of `--dtui-ui-bookmarks-inner-height` in `chrome/DownToneUI/_globals.css`. (Firefox restart is needed after every change)
         * If the value is too low, the red background will be visible.
 
         ![example_low_height](assets/example_low_height.png "example_low_height")

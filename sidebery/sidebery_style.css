@@ -1,65 +1,65 @@
 * {
-  --theme-color-scheme: dark;
-  --theme-main-color: 30, 34, 44;
-  --theme-secondary-color: 35, 40, 52;
-  --theme-accent-color: 58, 104, 175;
-  --theme-text-color: 240, 240, 240;
+  --dtui-theme-color-scheme: dark;
+  --dtui-theme-main-color: 30, 34, 44;
+  --dtui-theme-secondary-color: 35, 40, 52;
+  --dtui-theme-accent-color: 58, 104, 175;
+  --dtui-theme-text-color: 240, 240, 240;
 
-  --theme-accent-low-alpha: 0.5;
-  --theme-accent-mid-alpha: 0.75;
-  --theme-accent-high-contrast: hsl(219, 100.0%, 77.5%);
-  --theme-text-low-alpha: 0.5;
-  --theme-text-mid-alpha: 0.75;
+  --dtui-theme-accent-low-alpha: 0.5;
+  --dtui-theme-accent-mid-alpha: 0.75;
+  --dtui-theme-accent-high-contrast: hsl(219, 100.0%, 77.5%);
+  --dtui-theme-text-low-alpha: 0.5;
+  --dtui-theme-text-mid-alpha: 0.75;
 
-  --theme-separator-color: rgba(var(--theme-text-color), 0.05);
-  --theme-border-color: rgba(var(--theme-text-color), 0);
-  --theme-border-width: 2px;
-  --theme-border-radius: 8px;
+  --dtui-theme-separator-color: rgba(var(--dtui-theme-text-color), 0.05);
+  --dtui-theme-border-color: rgba(var(--dtui-theme-text-color), 0);
+  --dtui-theme-border-width: 2px;
+  --dtui-theme-border-radius: 8px;
 
-  --ui-sidebar-hover-debounce: 0ms;
-  --ui-sidebar-animation-speed: 300ms;
+  --dtui-ui-sidebar-hover-debounce: 0ms;
+  --dtui-ui-sidebar-animation-speed: 300ms;
 }
 
 #root.root {
-  data-act-el-color-scheme: var(--theme-color-scheme);
-  data-frame-color-scheme: var(--theme-color-scheme);
-  data-popup-color-scheme: var(--theme-color-scheme);
-  data-toolbar-color-scheme: var(--theme-color-scheme);
-  --scroll-color: rgba(var(--theme-accent-color), var(--theme-accent-low-alpha));
-  --frame-fg: rgba(var(--theme-text-color), var(--theme-text-mid-alpha));
-  --frame-bg: rgb(var(--theme-main-color));
-  --tabs-activated-bg: rgb(var(--theme-secondary-color));
-  --active-el-fg: rgb(var(--theme-text-color));
-  --tabs-activated-shadow: 0 0 0 0 rgba(0, 0, 0, 0), inset 0 0 0 var(--theme-border-width) rgba(var(--theme-accent-color), 1);
-  --frame-el-overlay-selected-border: rgb(var(--theme-accent-color));
-  --frame-el-overlay-selected-bg: rgb(var(--theme-secondary-color));
-  --frame-el-overlay-hover-bg: rgba(var(--theme-accent-color), var(--theme-accent-low-alpha));
-  --general-border-radius: var(--theme-border-radius);
-  --ctx-menu-fg: rgb(var(--theme-text-color));
-  --ctx-menu-bg: rgb(var(--theme-secondary-color));
-  --ctx-menu-border-radius: var(--theme-border-radius);
-  --ctx-menu-opt-border-radius: calc(var(--theme-border-radius) - 1px);
-  --ctx-menu-separator: var(--theme-separator-color);
-  --ctx-menu-shadow: 0 0 0 var(--theme-border-width) var(--theme-border-color), 0px 0px 3px 3px hsla(0, 0%, 0%, 0.08);
-  --s-frame-bg: rgb(var(--theme-main-color));
-  --s-frame-fg: rgb(var(--theme-text-color));
-  --s-toolbar-bg: rgb(var(--theme-main-color));
-  --s-toolbar-fg: rgb(var(--theme-text-color));
-  --s-act-el-bg: rgb(var(--theme-secondary-color));
-  --s-act-el-fg: rgb(var(--theme-text-color));
-  --s-popup-bg: rgb(var(--theme-main-color));
-  --s-popup-fg: rgb(var(--theme-text-color));
-  --s-popup-border: var(--theme-border-color);
-  --bookmarks-expanded-folder-bg: rgb(var(--theme-secondary-color));
-  --tabs-progress-bg: rgb(var(--theme-accent-color));
-  --active-el-overlay-hover-bg: rgba(var(--theme-accent-color), var(--theme-accent-low-alpha));
-  --active-el-overlay-clicked-bg: rgba(var(--theme-accent-color), var(--theme-accent-mid-alpha));
-  --toolbar-el-overlay-hover-bg: rgba(var(--theme-accent-color), var(--theme-accent-low-alpha));
-  --toolbar-el-overlay-clicked-bg: rgba(var(--theme-accent-color), var(--theme-accent-mid-alpha));
-  --toolbar-el-overlay-active-bg: rgb(var(--theme-secondary-color));
-  --toolbar-el-overlay-active-border: rgb(var(--theme-accent-color));
-  --toolbar-el-overlay-selected-bg: rgb(var(--theme-secondary-color));
-  --toolbar-el-overlay-selected-border: rgb(var(--theme-accent-color));
+  data-act-el-color-scheme: var(--dtui-theme-color-scheme);
+  data-frame-color-scheme: var(--dtui-theme-color-scheme);
+  data-popup-color-scheme: var(--dtui-theme-color-scheme);
+  data-toolbar-color-scheme: var(--dtui-theme-color-scheme);
+  --scroll-color: rgba(var(--dtui-theme-accent-color), var(--dtui-theme-accent-low-alpha));
+  --frame-fg: rgba(var(--dtui-theme-text-color), var(--dtui-theme-text-mid-alpha));
+  --frame-bg: rgb(var(--dtui-theme-main-color));
+  --tabs-activated-bg: rgb(var(--dtui-theme-secondary-color));
+  --active-el-fg: rgb(var(--dtui-theme-text-color));
+  --tabs-activated-shadow: 0 0 0 0 rgba(0, 0, 0, 0), inset 0 0 0 var(--dtui-theme-border-width) rgba(var(--dtui-theme-accent-color), 1);
+  --frame-el-overlay-selected-border: rgb(var(--dtui-theme-accent-color));
+  --frame-el-overlay-selected-bg: rgb(var(--dtui-theme-secondary-color));
+  --frame-el-overlay-hover-bg: rgba(var(--dtui-theme-accent-color), var(--dtui-theme-accent-low-alpha));
+  --general-border-radius: var(--dtui-theme-border-radius);
+  --ctx-menu-fg: rgb(var(--dtui-theme-text-color));
+  --ctx-menu-bg: rgb(var(--dtui-theme-secondary-color));
+  --ctx-menu-border-radius: var(--dtui-theme-border-radius);
+  --ctx-menu-opt-border-radius: calc(var(--dtui-theme-border-radius) - 1px);
+  --ctx-menu-separator: var(--dtui-theme-separator-color);
+  --ctx-menu-shadow: 0 0 0 var(--dtui-theme-border-width) var(--dtui-theme-border-color), 0px 0px 3px 3px hsla(0, 0%, 0%, 0.08);
+  --s-frame-bg: rgb(var(--dtui-theme-main-color));
+  --s-frame-fg: rgb(var(--dtui-theme-text-color));
+  --s-toolbar-bg: rgb(var(--dtui-theme-main-color));
+  --s-toolbar-fg: rgb(var(--dtui-theme-text-color));
+  --s-act-el-bg: rgb(var(--dtui-theme-secondary-color));
+  --s-act-el-fg: rgb(var(--dtui-theme-text-color));
+  --s-popup-bg: rgb(var(--dtui-theme-main-color));
+  --s-popup-fg: rgb(var(--dtui-theme-text-color));
+  --s-popup-border: var(--dtui-theme-border-color);
+  --bookmarks-expanded-folder-bg: rgb(var(--dtui-theme-secondary-color));
+  --tabs-progress-bg: rgb(var(--dtui-theme-accent-color));
+  --active-el-overlay-hover-bg: rgba(var(--dtui-theme-accent-color), var(--dtui-theme-accent-low-alpha));
+  --active-el-overlay-clicked-bg: rgba(var(--dtui-theme-accent-color), var(--dtui-theme-accent-mid-alpha));
+  --toolbar-el-overlay-hover-bg: rgba(var(--dtui-theme-accent-color), var(--dtui-theme-accent-low-alpha));
+  --toolbar-el-overlay-clicked-bg: rgba(var(--dtui-theme-accent-color), var(--dtui-theme-accent-mid-alpha));
+  --toolbar-el-overlay-active-bg: rgb(var(--dtui-theme-secondary-color));
+  --toolbar-el-overlay-active-border: rgb(var(--dtui-theme-accent-color));
+  --toolbar-el-overlay-selected-bg: rgb(var(--dtui-theme-secondary-color));
+  --toolbar-el-overlay-selected-border: rgb(var(--dtui-theme-accent-color));
 
   --tabs-lvl-opacity: 0.25;
   --tabs-indent: 12px;
@@ -79,15 +79,15 @@
   width: 2px;
   margin-left: 2px;
 }
-.Tab .title { transition: opacity var(--ui-sidebar-animation-speed) linear var(--ui-sidebar-hover-debounce); }
+.Tab .title { transition: opacity var(--dtui-ui-sidebar-animation-speed) linear var(--dtui-ui-sidebar-hover-debounce); }
 
 /* Audio indicator */
-.body .audio-icon { fill: rgb(var(--theme-text-color)); }
+.body .audio-icon { fill: rgb(var(--dtui-theme-text-color)); }
 .body:has(.audio) {
   .fav { display: none; }
   .title { margin-left: 10px; }
   .audio {
-    background-color: rgb(var(--theme-accent-color));
+    background-color: rgb(var(--dtui-theme-accent-color));
     height: 17px;
     width: 17px;
     margin: 5.5px 0px 0px -14.5px;

@@ -11,11 +11,11 @@
 #sidebar-header, #sidebar-splitter { display: none !important; }
 
 #sidebar-box {
-  min-width: var(--ui-sidebar-collapsed-width) !important;
-  max-width: var(--ui-sidebar-collapsed-width) !important;
+  min-width: var(--dtui-ui-sidebar-collapsed-width) !important;
+  max-width: var(--dtui-ui-sidebar-collapsed-width) !important;
   z-index: 3 !important;
 }
 #sidebar-box:hover, #sidebar-box[sidebarcommand="viewBookmarksSidebar"], #sidebar-box[sidebarcommand="viewHistorySidebar"] {
-  #sidebar { min-width: var(--ui-sidebar-extended-width) !important; }
+  #sidebar { min-width: var(--dtui-ui-sidebar-extended-width) !important; }
 }
-#sidebar { transition: min-width var(--ui-sidebar-animation-speed) ease-out var(--ui-sidebar-hover-debounce); }
+#sidebar { transition: min-width var(--dtui-ui-sidebar-animation-speed) ease-out var(--dtui-ui-sidebar-hover-debounce); }

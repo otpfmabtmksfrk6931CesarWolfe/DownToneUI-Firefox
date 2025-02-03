@@ -9,21 +9,21 @@
 /* Smaller bookmarks overflow button in compact mode */
 :root[uidensity="compact"] #PlacesChevron {
   margin-block: 0px !important;
-  height: var(--ui-bookmarks-inner-height) !important;
+  height: var(--dtui-ui-bookmarks-inner-height) !important;
 }
 
 /* Shadow for the Bookmarks bar */
-#PersonalToolbar { box-shadow: var(--theme-shadow) !important; }
+#PersonalToolbar { box-shadow: var(--dtui-theme-shadow) !important; }
 
 /*#PersonalToolbar { background-color: red !important; }*/
 #navigator-toolbox:not(:hover) #PersonalToolbar:not([customizing]) { opacity: 0 !important; }
-#PersonalToolbar { --bm-height: calc((-1 * var(--bookmark-block-padding) * 2) - var(--ui-bookmarks-inner-height)); }
+#PersonalToolbar { --bm-height: calc((-1 * var(--bookmark-block-padding) * 2) - var(--dtui-ui-bookmarks-inner-height)); }
 #navigator-toolbox:hover #PersonalToolbar:not([customizing]) {
   margin-top: 0px !important;
   margin-bottom: var(--bm-height) !important;
 }
 #PersonalToolbar:not([customizing]) {
   margin-top: var(--bm-height) !important;
-  transition: margin var(--ui-bookmarks-animation-speed) ease-out var(--ui-bookmarks-hover-debounce),
-              opacity var(--ui-bookmarks-animation-speed) ease-out var(--ui-bookmarks-hover-debounce);
+  transition: margin var(--dtui-ui-bookmarks-animation-speed) ease-out var(--dtui-ui-bookmarks-hover-debounce),
+              opacity var(--dtui-ui-bookmarks-animation-speed) ease-out var(--dtui-ui-bookmarks-hover-debounce);
 }
