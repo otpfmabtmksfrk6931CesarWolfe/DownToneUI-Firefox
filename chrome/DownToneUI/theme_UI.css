@@ -154,7 +154,10 @@ findbar, #navigator-toolbox, #urlbar-input {
 .tab-background[selected] {
   border: var(--dtui-theme-border-width) solid rgb(var(--dtui-theme-accent-color)) !important;
 }
-.tabbrowser-tab[soundplaying] .tab-icon-image { opacity: 0 !important; }
+.tabbrowser-tab[soundplaying] .tab-icon-image {
+  margin-left: 22px !important;
+  opacity: 1 !important;
+}
 .tab-icon-overlay {
   background-color: rgb(var(--dtui-theme-accent-color)) !important;
   fill: rgb(var(--dtui-theme-text-color)) !important;

@@ -60,6 +60,7 @@
   --toolbar-el-overlay-active-border: rgb(var(--dtui-theme-accent-color));
   --toolbar-el-overlay-selected-bg: rgb(var(--dtui-theme-secondary-color));
   --toolbar-el-overlay-selected-border: rgb(var(--dtui-theme-accent-color));
+  --status-notice: var(--dtui-theme-accent-high-contrast);
 
   --tabs-lvl-opacity: 0.25;
   --tabs-indent: 12px;
@@ -73,26 +74,28 @@
 #root:not(:hover) {
   .Tab[data-lvl]:not([data-lvl="0"]) { --tabs-indent: 0px; }
   .Tab .body:after { width: 0px; }
-  .Tab .title { opacity: 0; }
+  .Tab .title, .body:has(.audio) .fav { opacity: 0; }
 }
 .Tab .body:after {
-  width: 2px;
+  width: 1px;
   margin-left: 2px;
 }
-.Tab .title { transition: opacity var(--dtui-ui-sidebar-animation-speed) linear var(--dtui-ui-sidebar-hover-debounce); }
+.Tab .title, .body:has(.audio) .fav {
+  transition: opacity var(--dtui-ui-sidebar-animation-speed) linear var(--dtui-ui-sidebar-hover-debounce);
+}
 
 /* Audio indicator */
 .body .audio-icon { fill: rgb(var(--dtui-theme-text-color)); }
 .body:has(.audio) {
-  .fav { display: none; }
-  .title { margin-left: 10px; }
   .audio {
     background-color: rgb(var(--dtui-theme-accent-color));
-    height: 17px;
-    width: 17px;
-    margin: 5.5px 0px 0px -14.5px;
+    height: 16px;
+    width: 16px;
+    margin: 6px 0px 0px -14px;
     border-radius: 9999px;
   }
+  .fav { margin-left: 28px; }
+  .t-box { margin-left: -16px; }
 }
 
 /* Disable tab folding */
