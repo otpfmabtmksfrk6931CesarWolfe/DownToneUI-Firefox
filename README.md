@@ -22,22 +22,22 @@ For Sidebery: Sidebery settings > Help > Reset settings.
 ## Customization
 
 * It's recommended that additions or updates of the default styles to be done in the following files (which should be created by you). This way, your local changes will persist when this repository is updated.
-    * `DownToneUI/override_chrome.css` for changes to `userChrome.css`
-    * `DownToneUI/override_content.css` for changes to `userContent.css`
-    * `DownToneUI/override_globals.css` for changes to `DownToneUI/_globals.css`
+    * `chrome/DownToneUI/override_chrome.css` for changes to `chrome/userChrome.css`
+    * `chrome/DownToneUI/override_content.css` for changes to `chrome/userContent.css`
+    * `chrome/DownToneUI/override_globals.css` for changes to `chrome/DownToneUI/_globals.css`
 * For normal (horizontal) tabs:
     * In file `chrome/userChrome.css` remove the line `@import "DownToneUI/sidebar.css";`.
 * Changing the color scheme:
     * This can be done in `chrome/DownToneUI/_globals.css` by modifying the `--dtui-theme` variables.
     * **NOTE:** if vertical tabs are used, these changes also have to be applied to: Sidebery settings > Style editor.
 * See [addons](addons/) for some modifications of the defaults. The content of these files is intended to be copied as follows:
-    * `chrome_` files to `DownToneUI/override_chrome.css`
+    * `chrome_` files to `chrome/DownToneUI/override_chrome.css`
     * `sidbery_` files to Sidebery's Style editor (at the end)
 
 ## Notes
 
 * The bookmarks bar inner height varies based on the font you use and maybe other factors (like scaling). To get the correct height, some trial & error might be needed.
-    * First, copy the contents of `addons/chrome_debug_bookmarks_height.css.css` to your `DownToneUI/override_chrome.css`
+    * First, copy the contents of `addons/chrome_debug_bookmarks_height.css.css` to your `chrome/DownToneUI/override_chrome.css`
     * Decrease the value of `--dtui-ui-bookmarks-inner-height` in `chrome/DownToneUI/_globals.css` until the red background is visible. (Firefox restart is needed after every change)
 
         ![example_low_height](assets/example_low_height.png "example_low_height")
