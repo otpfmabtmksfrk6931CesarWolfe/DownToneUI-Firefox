@@ -16,4 +16,4 @@
 #window-modal-dialog[open], #customizationui-widget-panel[panelopen] {
     animation: popup-animation var(--dtui-ui-window-popup-animation-speed) linear;
 }
-@keyframes popup-animation { 50% { transform: scale(0.95); }}
+@keyframes popup-animation { 60% { transform: scale(0.95); }}
