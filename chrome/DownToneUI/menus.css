@@ -11,9 +11,9 @@
 
 /* Popup animations */
 #appMenu-popup[panelopen], #unified-extensions-panel[panelopen], .panel-no-padding[panelopen] {
-  animation: popup-animation var(--dtui-ui-menu-popup-animation-speed) linear;
+  animation: popup-animation var(--dtui-ui-menu-animation-speed) ease-out;
 }
 #window-modal-dialog[open], #customizationui-widget-panel[panelopen] {
-    animation: popup-animation var(--dtui-ui-window-popup-animation-speed) linear;
+    animation: popup-animation var(--dtui-ui-window-animation-speed) ease-out;
 }
 @keyframes popup-animation { 60% { transform: scale(0.95); }}
