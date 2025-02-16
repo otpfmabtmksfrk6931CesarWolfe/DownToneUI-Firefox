@@ -166,6 +166,9 @@ findbar, #navigator-toolbox, #urlbar-input, input[inputmode="search"] {
   opacity: 1 !important;
 }
 
+/* Clean extensions menu */
+#unified-extensions-panel { .panel-header, toolbarseparator, #unified-extensions-manage-extensions { display: none !important; }}
+
 /* Specific elements styling */
 menuitem:hover, menuitem:where([_moz-menuactive]:not([disabled])), menu:where([_moz-menuactive]:not([disabled])) {
   background-color: rgba(var(--dtui-theme-accent-color), var(--dtui-theme-accent-mid-alpha)) !important;
