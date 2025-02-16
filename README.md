@@ -24,7 +24,6 @@ For Sidebery: Sidebery settings > Help > Reset settings.
 * It's recommended that additions or updates of the default styles to be done in the following files (which should be created by you). This way, your local changes will persist when this repository is updated.
     * `chrome/DownToneUI/override_chrome.css` for changes to `chrome/userChrome.css`
     * `chrome/DownToneUI/override_content.css` for changes to `chrome/userContent.css`
-    * `chrome/DownToneUI/override_globals.css` for changes to `chrome/DownToneUI/_globals.css`
 * For normal (horizontal) tabs:
     * In file `chrome/userChrome.css` remove the line `@import "DownToneUI/sidebar.css";`.
 * Changing the color scheme:
