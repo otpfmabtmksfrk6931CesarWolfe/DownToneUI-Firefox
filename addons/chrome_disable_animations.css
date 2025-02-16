@@ -1,0 +1,11 @@
+/* ============================================================================
+ * Disable animations
+ * NOTE: "--dtui-ui-sidebar-animation-speed" should also be added in Sidebery
+ * ========================================================================= */
+
+* {
+  --dtui-ui-sidebar-animation-speed: 0ms;
+  --dtui-ui-bookmarks-animation-speed: 0ms;
+  --dtui-ui-menu-popup-animation-speed: 0ms;
+  --dtui-ui-window-popup-animation-speed: 0ms;
+}

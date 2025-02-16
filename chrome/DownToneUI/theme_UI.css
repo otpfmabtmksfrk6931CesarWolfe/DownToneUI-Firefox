@@ -166,9 +166,6 @@ findbar, #navigator-toolbox, #urlbar-input, input[inputmode="search"] {
   opacity: 1 !important;
 }
 
-/* Clean extensions menu */
-#unified-extensions-panel { .panel-header, toolbarseparator, #unified-extensions-manage-extensions { display: none !important; }}
-
 /* Specific elements styling */
 menuitem:hover, menuitem:where([_moz-menuactive]:not([disabled])), menu:where([_moz-menuactive]:not([disabled])) {
   background-color: rgba(var(--dtui-theme-accent-color), var(--dtui-theme-accent-mid-alpha)) !important;
@@ -193,7 +190,15 @@ button#viewButton:hover, #notification-popup-box:hover, richlistitem.autocomplet
 button#viewButton[open], #notification-popup-box[open] {
   background-color: rgb(var(--dtui-theme-accent-color)) !important;
 }
-#stop-button:not([disabled]) { fill: var(--dtui-theme-accent-high-contrast) !important; }
-tooltip, #statuspanel-label, #downloads-button { color: var(--dtui-theme-accent-high-contrast) !important; }
-search-textbox#search-box, button#viewButton, tooltip { appearance: none !important; }
+#stop-button:not([disabled]) {
+  fill: var(--dtui-theme-accent-high-contrast) !important;
+}
+tooltip, #statuspanel-label, #downloads-button {
+  color: var(--dtui-theme-accent-high-contrast) !important;
+}
+.autoscroller { opacity: 0 !important; }
 #statuspanel { margin: 10px !important; }
+search-textbox#search-box, button#viewButton, tooltip { appearance: none !important; }
+
+/* Clean extensions menu */
+#unified-extensions-panel { .panel-header, toolbarseparator, #unified-extensions-manage-extensions { display: none !important; }}
