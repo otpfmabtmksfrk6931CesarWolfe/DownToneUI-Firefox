@@ -5,9 +5,6 @@
 /* Hide "Bookmark this page" button from URLbar */
 #star-button-box { display: none !important; }
 
-/* Remove the window-drag spacers that are displayed around the tabs when the window is not maximized */
-.titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] { display: none !important; }
-
 /* Private Mode indicator */
 :root[privatebrowsingmode="temporary"] {
   .private-browsing-indicator-with-label { display: none; }
