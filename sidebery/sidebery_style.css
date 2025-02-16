@@ -51,7 +51,6 @@
   --s-popup-fg: rgb(var(--dtui-theme-text-color));
   --s-popup-border: var(--dtui-theme-border-color);
   --bookmarks-expanded-folder-bg: rgb(var(--dtui-theme-secondary-color));
-  --tabs-progress-bg: rgb(var(--dtui-theme-accent-color));
   --active-el-overlay-hover-bg: rgba(var(--dtui-theme-accent-color), var(--dtui-theme-accent-low-alpha));
   --active-el-overlay-clicked-bg: rgba(var(--dtui-theme-accent-color), var(--dtui-theme-accent-mid-alpha));
   --toolbar-el-overlay-hover-bg: rgba(var(--dtui-theme-accent-color), var(--dtui-theme-accent-low-alpha));
@@ -65,6 +64,11 @@
   --tabs-lvl-opacity: 0.25;
   --tabs-indent: 12px;
   --ctx-menu-min-width: 170px;
+}
+
+.progress-spinner {
+  --tabs-progress-bg: var(--dtui-theme-accent-high-contrast);
+  border-top: 2px solid rgba(0, 0, 0, 0) !important;
 }
 
 /* Center favicons (depending on the sidebar collapsed width) */
