@@ -31,6 +31,7 @@ For Sidebery: Sidebery settings > Help > Reset settings.
     * **NOTE:** if vertical tabs are used, these changes also have to be applied to: Sidebery settings > Style editor.
 * See [addons](addons/) for some modifications of the defaults. The content of these files is intended to be copied as follows:
     * `chrome_` files to `chrome/DownToneUI/override_chrome.css`
+    * `content_` files to `chrome/DownToneUI/override_content.css`
     * `sidbery_` files to Sidebery's Style editor (at the end)
 
 ## Notes
