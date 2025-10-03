@@ -59,3 +59,5 @@ For Sidebery: Sidebery settings > Help > Reset settings.
 
 * Contributors to the [firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks) repository and [Zen Browser](https://zen-browser.app) for some ideas.
 * Community on [/r/FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/) for the various snippets of information.
+
+<!-- Auto-update: 2025-10-03T14:45:04.463574 -->
