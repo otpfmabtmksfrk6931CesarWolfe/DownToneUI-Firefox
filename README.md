@@ -61,3 +61,5 @@ For Sidebery: Sidebery settings > Help > Reset settings.
 * Community on [/r/FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/) for the various snippets of information.
 
 <!-- Auto-update: 2025-10-03T14:45:04.463574 -->
+
+<!-- Auto-update: 2025-10-06T21:08:47.164229 -->
